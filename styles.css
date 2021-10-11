@@ -1,0 +1,402 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body{
+font-family: "Poppins";
+margin:0;
+padding:0px;
+
+}
+.header{
+height: 80px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+background-color:#ce0505;
+
+
+
+}
+
+.topnavbar{
+     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    width: 95%;
+	}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+	
+}
+
+.nav-link{
+    font-family: Poppins;
+  font-size: 15px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.56;
+  letter-spacing: normal;
+  text-align: left;
+  color: #fff;
+}	
+li {
+    list-style: none;
+	margin:5px;
+	
+}
+
+a {
+    text-decoration: none;
+}
+.column {
+  float: left;
+  width: 350px;
+  margin-bottom: 16px;
+  padding: 0 8px;
+     }
+
+.container{
+ max-width: 1200px;
+ margin:0px auto;
+ 
+ }
+ @media screen and (max-width: 1200px) {
+  .column {
+    width: 33.33%;
+    display: block;
+  }
+  .card-7{
+  width:100%;
+  margin:0px;
+}
+
+}
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+  .card-7{
+  width:100%;
+ 
+  }
+  .titlebreakfast{
+  display:none;
+  }
+
+}
+
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: 2px solid #ffffff;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+
+.card-5{
+width:33.33%;
+box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+  background-color: #fff;
+  height:820px;
+  
+  
+}
+.card-7{
+width:66.66%;
+box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+  background-color: #fff;
+  padding:16px;
+  float:right;
+  margin-right:-15px;
+}
+@media screen and (max-width: 1200px) {
+  .card-5 {
+    width: 100%;
+    display: block;
+	
+  }
+}
+@media screen and (max-width: 1200px) {
+  .card-7 {
+    width: 100%;
+    display: block;
+	margin:0px 0px 10px 0;
+	
+  }
+ 
+  .card{
+  width:100%;
+  display:block;
+ }
+
+}
+@media screen and (max-width: 1900px) {
+.titlebreakfast1 {
+    display: none;
+}
+}
+@media screen and (max-width: 630px) {
+.titlebreakfast1 {
+    display: block;
+	
+  margin: 14px 267.4px 5px 41px;
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.53;
+  letter-spacing: normal;
+  text-align: left;
+  color: #192f60;
+}
+.address{
+font-size:10px;
+margin:10px;
+}
+}
+.container{
+width: 100%;
+display: block;
+}
+.col-span{
+ 
+    margin-right: 0px;
+	}
+	
+	.card2{
+	width:25%;
+	}
+	
+	#insidecontent{
+	display:flex;
+	justify-content:space-between;
+	
+	}
+	
+	.hl{
+width: 100%;
+  height: 0;
+  margin: 31px 0 0;
+  border: solid 1px #dedfe5;
+  overflow:hidden;
+  }
+  
+  
+  
+  .filter{
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: left;
+  
+}
+
+/* Hide the browser's default checkbox */
+.filter input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+ 
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+ 
+  border-radius: 1.5px;
+  border: solid 1.5px #3a5075;
+}
+
+/* On mouse-over, add a grey background color */
+.filter:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.filter input:checked ~ .checkmark {
+  background-color: #3a5075;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.filter input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.filter .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.cuisine{
+width: 51px;
+  height: 20px;
+  margin: 22px 157px 15px 1px;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: left;
+  color: #192f60;
+  }
+.filter1{
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.filter1 input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.checkmark1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  border-radius: 9px;
+  border: solid 1.5px #3a5075;
+
+}
+.cost,.sort{
+width: 89px;
+  height: 20px;
+  margin: 0 115px 0 0;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: left;
+  color: #192f60;
+  }
+  
+  .titlebreakfast{
+  width: 298px;
+  height: 43px;
+  margin: 14px 267.4px 5px 41px;
+  font-family: Poppins;
+  font-size: 30px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.53;
+  letter-spacing: normal;
+  text-align: left;
+  color: #192f60;
+  }
+  .titlefort{
+   width: 39px;
+  height: 23px;
+  margin: 5px 521.4px 5px 46px;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.88;
+  letter-spacing: normal;
+  text-align: left;
+  color: #192f60;
+  }
+
+  #cars{
+  width: 208px;
+  height: 35px;
+  margin: 11px 0 22px 1px;
+  padding: 8px 16.7px 7px 15px;
+  border-radius: 3px;
+  border: solid 1px #8c96ab;
+  }
+  
+  .pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+  border-radius: 7px;
+  border: solid 1px #8c96ab;
+  background-color: #fff;
+}
+
+.pagination a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}
+
